@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS PROJECT</title>
+    <!-- font awesome cdn files icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CRUDS PROJECT</h1>
+        <div class="search">
+            <input onkeyup="search(this.value)" id="search" placeholder="Search" type="search">
+        </div>
+        <div class="create">
+            <div>
+                <label for="user">username</label>
+                <input type="text" id="user">
+            </div>
+            <div>
+                <label for="pass">password</label>
+                <input type="text" id="pass">
+            </div>
+            <input id="submit" type="submit" value="Submit">
+            <input id="update" type="submit" value="update">
+        </div>
+        <div id="deleteAll" onclick="deleteAllData()" style="display:none;color: aliceblue;padding: 5px; background-color: red;" class="deleteAllData">Delete all <i style="font-size: 18px; color: aliceblue;" class="fa-solid fa-trash-can"></i></div>
+        <div id="read">
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

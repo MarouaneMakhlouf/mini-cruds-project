@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: "Nanum Gothic", sans-serif;
+}
+h1{
+    animation: hone 3s linear  infinite;
+}
+@keyframes hone {
+    0%{
+        color: red;
+        letter-spacing: 2px;
+    }
+    20%{
+        color: blue;
+        letter-spacing: 4px;
+    }
+    40%{
+        color: yellow;
+        letter-spacing: 2px;
+    }
+    60%{
+        color: green;
+        letter-spacing: 4px;
+    }
+    100%{
+        color: #ff00f2;
+        letter-spacing: 2px;
+    }
+}
+input{
+    padding: 5px;
+    outline: none;
+    background-color: #d3f1f8;
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    padding-top: 30px;
+    align-items: center;
+    background-color: #b0dfeb;
+}
+#search{
+    width: 300px;
+    height: 40px;
+    border: .5px solid #000;
+    outline: none;
+    padding: 9px;
+    border-radius: 14px;
+}
+.create{
+    width: 300px;
+    height: 150px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.create div{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: space-around;
+}
+#read{
+    width: 300px;
+    height: fit-content;
+    min-height: 50px;
+    border: solid 1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #b0dfeb;
+}
+.profile{
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+}
+.profile h3{
+    color: blue;
+    font-size: 14px;
+}
+.profile h4{
+    color: blue;
+    font-size: 13px;
+    padding: 5px;
+    border: .5px solid #444;
+    color: #444;
+    background-color: #89e6fd;
+}
+.profile i{
+    padding: 9px;
+    border: .7px solid #333;
+    border-radius: 50%;
+}
